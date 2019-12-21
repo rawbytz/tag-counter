@@ -7,6 +7,7 @@
 - To sort tags by frequency, set sortByCount=true near the beginning of the code.
 
 ![Tag Counter](https://i.imgur.com/Bzpzyco.png)
+*Screenshot of Popup*
 
 ## Installation: Drag this link to your bookmarks bar:
 
@@ -16,5 +17,6 @@
 
 ## Links:
 - [Source code](https://github.com/rawbytz/tag-counter/blob/master/tagCounter.js)
+- [Time Tag Counter is here](https://rawbytz.github.io/time-tag-counter/)
 - [rawbytz Blog](https://rawbytz.wordpress.com)
 
