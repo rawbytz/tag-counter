@@ -1,2 +1,2 @@
 ## Tag Counter Utility for WorkFlowy
-- add bm link here
+- [Go to Bookmarklet page](https://rawbytz.github.io/tag-counter/)
