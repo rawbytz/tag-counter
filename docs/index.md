@@ -7,7 +7,6 @@
 - To sort tags by frequency, set sortByCount=true near the beginning of the code.
 
 ![Tag Counter](https://i.imgur.com/Bzpzyco.png)
-*Screenshot of Popup*
 
 ## Installation: Drag this link to your bookmarks bar:
 
