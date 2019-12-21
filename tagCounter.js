@@ -1,4 +1,3 @@
-// TODO: set _sortByCount_ = false, showCompleted = true for Blogger
 (function tagCounter_1_6(sortByCount = '_sortByCount_', showCompleted = '_showCompleted_') {
 
   if (typeof sortByCount !== "boolean") sortByCount = false;
