@@ -1,4 +1,4 @@
-(function tagCounter_1_6(sortByCount = '_sortByCount_', showCompleted = '_showCompleted_') {
+(function tagCounter_1_7(sortByCount = '_sortByCount_', showCompleted = '_showCompleted_') {
 
   if (typeof sortByCount !== "boolean") sortByCount = false;
   if (typeof showCompleted !== "boolean") showCompleted = true;
@@ -67,12 +67,15 @@
     search = WF.currentSearchQuery() ? WF.currentSearchQuery() + " : " : "";
   tagPre = tagCounts.map((t) => `${t.count.toString().padStart(padMax, " ")}\t<a class="tagLinks" href="${url}?q=${encodeURIComponent(t.tag)}">${t.tag}</a>`);
   WF.showAlertDialog(`<pre><br>${tagPre.join('<br>')}<br><br><b>${total}\tTOTAL</b></pre>`, search + current.getNameInPlainText());
-  setTimeout(function () {
-    const tagLinks = document.getElementsByClassName("tagLinks");
-    for (let tagLink of tagLinks) {
-      tagLink.addEventListener('click', function () {
-        WF.hideDialog()
-      }, false);
+  const intervalId = setInterval(function () {
+    let tagLinks = document.getElementsByClassName("tagLinks");
+    if (tagLinks) {
+      clearInterval(intervalId);
+      for (let tagLink of tagLinks) {
+        tagLink.addEventListener('click', function () {
+          WF.hideDialog()
+        }, false);
+      }
     }
-  }, 100);
+  }, 50);
 })();
